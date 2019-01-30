@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Test av PHQ-9</title>
+	<link rel="stylesheet" type="text/css" href="phq9.css">
+
+</head>
+
+<body>
+
+	<h1>DEPRESSIONSENKÄT (PHQ-9)</h1>
+	<p>Detta frågeformulär är viktigt för att kunna ge dig bästa möjliga hälsovård. Dina svar kommer att underlätta förståelsen för problem som du kan ha.</p>
+
+	<p> </p>
+	<p> 
+		<form name="theForm">
+			<table style=""">
+				<tr>
+					<th>
+						Under de senaste 2 veckorna, hur ofta har du besvärats av något av följande problem:
+					</th>
+					<th class="rotate">
+						<div>
+							Inte alls 
+						</div>
+					</th>
+					<th class="rotate">
+						<div>
+							Flera dagar
+						</div>
+					</th>
+					<th class="rotate">
+						<div>
+							Mer än hälften av dagarna
+						</div>
+					</th>
+					<th class="rotate">
+						<div>
+							Nästan varje dag
+						</div>
+					</th>
+				</tr>
+
+				<tr>
+					<td>
+						a) Lite intresse eller glädje i att göra saker
+					</td>  
+					<td colspan=4>
+						<input type="radio" name="question1" value="0">
+						<input type="radio" name="question1" value="1">
+						<input type="radio" name="question1" value="2">
+						<input type="radio" name="question1" value="3">
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						b) känt dig nedstämd, deprimerad eller känt att framtiden ser hopplös ut
+					</td>  
+					<td colspan=4>
+						<input type="radio" name="question2" value="0">
+						<input type="radio" name="question2" value="1">
+						<input type="radio" name="question2" value="2">
+						<input type="radio" name="question2" value="3">
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						c) problem att somna eller att du vaknat i förtid, eller sovit för mycket
+					</td>  
+					<td colspan=4>
+						<input type="radio" name="question3" value="0">
+						<input type="radio" name="question3" value="1">
+						<input type="radio" name="question3" value="2">
+						<input type="radio" name="question3" value="3">
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						d) känt dig trött eller energilös
+					</td>
+					<td colspan=4>
+						<input type="radio" name="question4" value="0">
+						<input type="radio" name="question4" value="1">
+						<input type="radio" name="question4" value="2">
+						<input type="radio" name="question4" value="3">
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						e) dålig aptit eller att du ätit för mycket
+					</td>
+					<td colspan=4>
+						<input type="radio" name="question5" value="0">
+						<input type="radio" name="question5" value="1">
+						<input type="radio" name="question5" value="2">
+						<input type="radio" name="question5" value="3">
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						f) dålig självkänsla - eller att du känt dig misslyckad eller att du svikit dig själv eller din familj
+					</td>
+					<td colspan=4>
+						<input type="radio" name="question6" value="0">
+						<input type="radio" name="question6" value="1">
+						<input type="radio" name="question6" value="2">
+						<input type="radio" name="question6" value="3">
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						g) svårigheter att koncentrera dig, till exempel
+						när du läst tidningen eller sett på TV
+					</td>
+					<td colspan=4>
+						<input type="radio" name="question7" value="0">
+						<input type="radio" name="question7" value="1">
+						<input type="radio" name="question7" value="2">
+						<input type="radio" name="question7" value="3">
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						h) att du rört dig eller talat så långsamt att andra noterat det? Eller motsatsen – att du varit så nervös eller rastlös att du rört dig mer än vanligt
+					</td>
+					<td colspan=4>
+						<input type="radio" name="question8" value="0">
+						<input type="radio" name="question8" value="1">
+						<input type="radio" name="question8" value="2">
+						<input type="radio" name="question8" value="3">
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						i) tankar att det skulle vara bättre om du var död eller att du skulle skada dig på något sätt
+					</td>
+					<td colspan=4>
+						<input type="radio" name="question9" value="0">
+						<input type="radio" name="question9" value="1">
+						<input type="radio" name="question9" value="2">
+						<input type="radio" name="question9" value="3">
+					</td>
+				</tr>
+
+			</table>
+
+
+			<p>
+				Om du kryssat för att du haft något av dessa problem, hur stora svårigheter har dessa problem förorsakat dig på arbetet, eller för att ta hand om sysslor hemma, eller i kontakten med andra människor? 
+			</p>
+			<p>
+				<input type="radio" name="question10" value="inga">Inga svårigheter</input>
+				<input type="radio" name="question10" value="vissa">Vissa svårigheter</input>
+				<input type="radio" name="question10" value="stora">Stora svårigheter</input>
+				<input type="radio" name="question10" value="extrema">Extrema svårigheter</input>
+			</p>
+
+			<p>
+				<button type="button" class="submitButton">Räkna ut</button>
+			</p>
+
+		</form>
+		<p>
+			Resultat: <span class="resultatet"></span>
+		</p>
+
+		<script type="text/javascript" src="phq9.js"></script>
+
+	</body>
+
+	</html>
